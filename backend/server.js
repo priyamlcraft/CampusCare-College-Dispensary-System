@@ -30,10 +30,11 @@ app.use(cors({
     "http://localhost:5173",
     "http://localhost:5174",
     "http://localhost:5175",
-    "https://campus-care-dispensary-syst.vercel.app"
+    "https://campus-care-dispensary-syst.vercel.app",
+    "https://campus-care-college-dispensary-system.vercel.app",
+    /^https:\/\/campus-care-college-dispensary-system-[a-z0-9-]+-priyamlcraft\.vercel\.app$/
   ]
 }));
-
 app.use(express.json());
 
 // Home Route
