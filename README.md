@@ -1,210 +1,235 @@
 # CampusCare – College Dispensary Management System
 
-## Overview
+## Acknowledgement
 
-CampusCare is a web-based College Dispensary Management System developed using the MERN Stack. The application is designed to digitize and simplify the management of college dispensary activities through a centralized platform.
+We would like to express our sincere gratitude to **Ardent Computech Pvt. Ltd., Durgapur**, for providing us with the opportunity to undertake this project as part of our Full Stack Development Internship.
 
-It provides an organized interface for managing dispensary operations, student information, and related records. The system uses a React-based frontend, a Node.js and Express.js backend, and MongoDB for data storage.
+We are especially grateful to our project mentor, **Mr. Rahul Sharma**, for his valuable guidance, continuous support, encouragement, and constructive feedback throughout the development process. His guidance helped us strengthen our technical understanding and approach project challenges with confidence.
 
-## Objectives
+We would also like to extend our heartfelt thanks to **Bankura Unnayani Institute of Engineering**, our faculty members, and everyone who supported and motivated us during this project.
 
-- To digitize college dispensary management activities.
-- To maintain student and dispensary-related records systematically.
-- To provide a centralized platform for dispensary operations.
-- To simplify administrative tasks through a web-based interface.
-- To improve data organization and accessibility.
+This internship provided us with an excellent opportunity to apply our theoretical knowledge to practical development. Through this project, we gained valuable experience in MERN stack development, database management, REST API integration, authentication, and collaborative software development.
 
-## Technologies Used
+Finally, we sincerely thank all our team members for their cooperation, dedication, and contributions towards completing this project.
 
-### Frontend
-- React.js – Building the user interface.
-- Vite – Frontend development and build tool.
-- HTML5 – Web page structure.
-- CSS3 – Styling and layout.
-- JavaScript – Application functionality.
+## Contributors
 
-### Backend
-- Node.js – JavaScript runtime environment.
-- Express.js – Backend framework.
-- REST API – Communication between frontend and backend.
+This project was collaboratively developed by the following team members:
 
-### Database
-- MongoDB – NoSQL database.
-- Mongoose – MongoDB object data modeling.
+1. **Priya Mandal**
+2. **Ritwika Maji**
+3. **Smriti Gorai**
+4. **Sucheta Kar**
+5. **Puja Maji**
 
-### Authentication and Security
-- JSON Web Token (JWT) – Authentication.
-- bcryptjs – Password hashing.
+### Internship & Academic Details
+
+- **Institution:** Bankura Unnayani Institute of Engineering
+- **Internship Organization:** Ardent Computech Pvt. Ltd., Durgapur
+- **Internship Domain:** Full Stack Development Using MERN Stack
+- **Internship Duration:** 21 September 2026 – 20 October 2026
+- **Project Mentor:** Mr. Rahul Sharma
+- **Academic Session:** 2026–2027
+
+---
+
+## Project Overview
+
+**CampusCare – College Dispensary Management System** is a web-based application designed to digitize and simplify the daily administrative activities of a college dispensary.
+
+The system provides a centralized platform for managing student records, dispensary visits, medicine inventory, medicine distribution, emergency records, and reports. It aims to reduce manual record-keeping, improve data organization, and make dispensary operations more efficient.
+
+**Live Application:** https://campus-care-college-dispensary-syst.vercel.app/
+
+**GitHub Repository:** https://github.com/priyamlcraft/CampusCare-College-Dispensary-System
 
 ## Key Features
 
 ### 1. Admin Authentication
-- Admin login functionality.
-- Password verification.
+- Admin login using email and password.
 - JWT-based authentication.
+- Protected application routes and API requests.
 
-### 2. Student Management
-- Management of student-related information.
-- Organized access to student records.
+### 2. Dashboard
+- Overview of important dispensary information.
+- Quick access to different management modules.
+- Summary of students, visits, medicines, distributions, and emergency records.
 
-### 3. Dispensary Management
-- Management of dispensary-related information and records.
-- Centralized handling of dispensary activities.
+### 3. Student Management
+- Add, view, update, and delete student records.
+- Maintain student information and unique Student IDs.
+- Search and manage student details.
 
-### 4. Database Management
-- MongoDB database integration.
-- Mongoose models for structured data handling.
+### 4. Dispensary Visit Management
+- Create and manage student visit records.
+- Maintain visit dates, reasons, symptoms, and remarks.
+- Update visit information and status.
 
-### 5. User Interface
-- React-based interface.
-- Organized navigation and user-friendly design.
-- Responsive layout.
+### 5. Medicine Inventory Management
+- Add, view, update, and delete medicine records.
+- Maintain medicine names, categories, batch numbers, and supplier details.
+- Track available quantities and expiry dates.
+- Monitor minimum stock levels.
+- Identify low-stock and out-of-stock medicines.
 
-## Project Architecture
+### 6. Medicine Distribution
+- Record medicine distribution to students.
+- Select medicines and specify quantities.
+- Update inventory quantities after distribution.
+- Maintain distribution records.
 
-The application follows a client-server architecture.
+### 7. Emergency Management
+- Create and manage emergency records.
+- Maintain student or person details.
+- Record emergency type, date, description, and action taken.
+- Track emergency status, such as Open, Resolved, or Referred.
 
-- **Frontend:** Handles the user interface and user interactions.
-- **Backend:** Processes API requests and application logic.
-- **Database:** Stores and manages application data.
+### 8. Reports and Analytics
+- View summarized dispensary information.
+- Monitor medicine stock and distribution records.
+- Track student visits and emergency statuses.
 
-## Project Directory Structure
+## Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| MongoDB Atlas | Database |
+| Express.js | Backend framework |
+| React.js | Frontend library |
+| Node.js | Server-side runtime |
+| JavaScript | Application logic |
+| HTML5 | Web page structure |
+| CSS3 | Styling and layout |
+| Axios | API communication |
+| JWT | Authentication |
+| Vite | Frontend development and build tool |
+
+## Project Structure
 
 ```text
 CampusCare-College-Dispensary-System/
 │
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+│
 ├── frontend/
 │   ├── public/
 │   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   └── ...
-│   ├── package.json
-│   └── vite.config.js
-│
-├── backend/
-│   ├── config/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   ├── server.js
-│   └── package.json
+│   ├── index.html
+│   └── vercel.json
 │
 └── README.md
 ```
 
+*Note: The structure above provides an overview. Actual files and folders may vary.*
+
 ## Installation and Setup
+
+Follow these steps to run the project locally.
 
 ### Prerequisites
 
 Make sure the following are installed:
 
-- Node.js
-- npm
-- MongoDB Atlas account or a MongoDB database
+- Node.js and npm
+- MongoDB Atlas account
 - Git
+- Visual Studio Code (recommended)
 
-### Step 1: Clone the Repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/CampusCare-College-Dispensary-System.git
+git clone https://github.com/priyamlcraft/CampusCare-College-Dispensary-System.git
 ```
-
-Navigate to the project directory:
 
 ```bash
 cd CampusCare-College-Dispensary-System
 ```
 
-### Step 2: Backend Configuration
-
-Navigate to the backend folder:
+### 2. Backend Setup
 
 ```bash
 cd backend
 npm install
 ```
 
-Create a `.env` file inside the backend directory and configure the following variables:
+Create a `.env` file inside the `backend` folder and configure your environment variables:
 
 ```env
 PORT=5000
-NODE_ENV=development
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-ADMIN_NAME=your_admin_name
-ADMIN_EMAIL=your_admin_email
-ADMIN_PASSWORD=your_admin_password
+JWT_SECRET=your_secret_key
 ```
 
-### Step 3: Start the Backend Server
+Use your own MongoDB connection string and a strong secret key. Never upload the `.env` file or expose credentials on GitHub.
+
+Start the backend using the script configured in `backend/package.json`:
 
 ```bash
 npm run dev
 ```
 
-### Step 4: Frontend Configuration
+### 3. Frontend Setup
 
-Open another terminal and navigate to the frontend directory:
+Open a new terminal:
 
 ```bash
 cd frontend
 npm install
-```
-
-### Step 5: Start the Frontend
-
-```bash
 npm run dev
 ```
 
-Open the local URL displayed in the terminal to access the application.
+Vite will provide a local development URL in the terminal. Open that URL in your browser to access the application.
 
-## Environment Variables
+## Deployment
 
-| Variable | Description |
+The project is deployed using the following services:
+
+| Service | Platform |
 |---|---|
-| PORT | Backend server port |
-| NODE_ENV | Application environment |
-| MONGO_URI | MongoDB connection string |
-| JWT_SECRET | Secret key for JWT authentication |
-| ADMIN_NAME | Admin name |
-| ADMIN_EMAIL | Admin email |
-| ADMIN_PASSWORD | Admin password |
+| Frontend | Vercel |
+| Backend | Render |
+| Database | MongoDB Atlas |
+
+**Live Project:** https://campus-care-college-dispensary-syst.vercel.app/
 
 ## Security Considerations
 
-- Passwords are handled using bcryptjs.
-- Authentication uses JSON Web Tokens.
-- Sensitive credentials are stored in environment variables.
-- Actual `.env` files should never be uploaded to a public repository.
+- JWT-based authentication for admin access.
+- Protected routes and API endpoints.
+- Environment variables for sensitive configuration.
+- Database connection through MongoDB Atlas.
+- Sensitive credentials should never be committed to the repository.
 
-## Future Enhancements
+## Project Purpose
 
-- Online appointment booking.
-- Medicine inventory management.
-- Prescription management.
-- Medical report generation.
-- Additional administrative features.
+The main objective of CampusCare is to provide a digital solution for managing college dispensary activities.
 
-## Project Information
+The system aims to:
 
-| Details | Description |
-|---|---|
-| Project Name | CampusCare |
-| Project Category | Web Application |
-| Project Domain | Full Stack Web Development |
-| Development Stack | MERN |
-| Frontend | React.js |
-| Backend | Node.js and Express.js |
-| Database | MongoDB |
+- Reduce manual paperwork and record-keeping.
+- Improve student and dispensary record management.
+- Simplify medicine inventory tracking.
+- Maintain medicine distribution records.
+- Organize emergency information.
+- Improve the overall efficiency of dispensary operations.
 
-## Conclusion
+## Future Scope
 
-CampusCare provides a digital platform for organizing college dispensary activities. By integrating modern web technologies, the system aims to make dispensary-related operations more structured, accessible, and manageable.
+The project can be further enhanced with additional features, such as:
+
+- Role-based access for different dispensary staff members.
+- Automated low-stock and medicine-expiry notifications.
+- Advanced reporting and data export.
+- Appointment scheduling.
+- Improved analytics and activity monitoring.
 
 ---
 
-**CampusCare – College Dispensary Management System**
+**Developed as part of the Full Stack Development Using MERN Stack Internship at Ardent Computech Pvt. Ltd., Durgapur.**
+
